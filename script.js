@@ -7,8 +7,6 @@ function AbrirForm(){
     form.style.transform = "translateX(-50%)"
     masc.style.visibility = "visible"
     form.style.transition = "1s"
-    fale.style.left = "50%"
-    fale.style.transition = "1s"
 }
 function FecharForm(){
     form.style.left = "-350px"
@@ -23,3 +21,4 @@ const secao = document.getElementById('destino');
 btn.addEventListener('click', () => {
   secao.scrollIntoView({ behavior: 'smooth' });
 });
+
