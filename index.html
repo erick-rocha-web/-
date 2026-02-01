@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Rocha | Criação de Sites para Comércios Locais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo-titulo.png">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo" src="img/logo-header.png" alt="logo-principal-do-site">
+
+        <nav class="links">
+
+            <a href="#preço">Preços</a>
+            <p>|</p>
+            <a href="#serviços">Serviços</a>
+            <p>|</p>
+            <a href="#home">Home</a>
+            <p>|</p>
+            <a href="#Sobre">Sobre mim</a>
+            <p>|</p>
+            <a href="#rodape">Contato</a>
+
+        </nav>
+
+    </header>
+
+    <div class="masc" onclick="FecharForm()"></div>
+
+    <section id="home" class="area-principal">
+
+        <div class="caixa-de-texto-principal">
+
+            <h1>Site para comércios locais, <br> sem mensalidade</h1>
+
+            <p>Eu crio um site <span>rápido</span> e <span>bonito</span> para a sua loja <br> aparecer melhor e receber
+                mais contatos.</p>
+
+            <ul class="sublinhado">
+
+                <li>Responsivo (celular e pc)</li>
+                <li>Botão de contato (Whatsapp / Instagram / Email)</li>
+                <li>Entrega rápida e contrato</li>
+
+            </ul>
+
+            <button class="pedir-orçamento" id="meubotão">Saiba mais</button>
+
+        </div>
+
+        <div class="imagem-loja">
+
+            <img src="img/exemplo-loja.png" alt="Imagem de exemplo de loja">
+
+        </div>
+
+        <div class="formulario">
+
+            <form class="form" action="https://formcarry.com/s/L7vPJmRgA-F" method="POST" enctype="multipart/form-data">
+
+                <input placeholder="Digite seu nome" type="text" name="nome">
+                <input placeholder="Telefone para contato" type="tel" name="telefone">
+                <textarea placeholder="Faça uma breve explicação do projeto" name="Explicação"></textarea>
+
+                <div class="centro">
+
+                    <button class="enviar" type="submit">Enviar Informações</button>
+
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    <hr class="divisor-secao">
+
+    <section class="funciona">
+
+        <br>
+
+        <h2 class="h2">Por que funciona?</h2>
+
+        <br>
+
+        <div class="organizador" id="destino">
+
+            <div class="porque-1">
+
+                <ul>
+
+                    <li>Feito para expandir seu comércio</li>
+                    <li>Foco em contato rápido com o cliente</li>
+                    <li>Sem mensalidades</li>
+                
+                </ul>
+
+            </div>
+
+            <div class="porque-2">
+
+                <ul>
+
+                    <li>Funciona bem no celular, que é onde o cliente está</li>
+                    <li>Ajuda sua loja a passar mais confiança</li>
+                    <li>Site simples, sem complicação para você</li>
+                
+                </ul>
+
+            </div>
+
+        </div>
+
+        <br>
+
+    </section>
+
+    <hr class="divisor-secao">
+
+    <section class="especificações" id="serviços">
+
+        <div class="serviços">
+
+            <br>
+
+            <h2>Serviços</h2>
+
+            <br>
+
+            <div class="imagens-serviços">
+
+                <div class="hover-imagem">
+
+                    <img class="config-serviços" src="img/serviço-1.png" alt="Site institucional">
+                
+                </div>
+
+                <div class="hover-imagem">
+
+                    <img class="config-serviços" src="img/serviço-2.png" alt="Site Responsivo">
+                
+                </div>
+
+                <div class="hover-imagem">
+
+                    <img class="config-serviços" src="img/serviço-3.png" alt="Contato rápido">
+                
+                </div>
+
+                <div class="hover-imagem">
+
+                    <img class="config-serviços" src="img/serviço-4.png" alt="Entrega rápida">
+                
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+    </section>
+
+    <hr class="divisor-secao">
+
+    <section id="preço">
+
+        <br>
+
+        <h2>Preços</h2>
+
+        <br>
+
+        <div class="preços">
+
+            <div class="preço-1">
+
+                <div class="hover-imagem-2">
+
+                    <img src="img/preço-essencial.png" alt="Tabela de preço-essencial">
+                
+                </div>
+
+                <div class="button" onclick="AbrirForm()"><button>Contratar</button></div>
+            
+            </div>
+
+            <div class="preço-2">
+
+                <div class="hover-imagem-3">
+
+                    <img src="img/extras.png" alt="Tabela preços extras">
+                
+                </div>
+
+                <div class="button-2" onclick="AbrirForm()"><button>Negociar</button></div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr class="divisor-secao">
+
+    <section id="Sobre" class="sobre-mim">
+
+        <br>
+
+        <h2>Sobre Mim</h2>
+
+        <br>
+
+        <div class="text-sobre-mim">
+
+            <div class="text-sobre">
+
+                <p>Sou um <span>desenvolvedor</span> focado na criação de <span>sites eficientes</span> e pensados para
+                    <span>comércios locais</span>. Meu trabalho vai além de “fazer um site bonito”: eu me preocupo em
+                    criar algo
+                    <span>claro</span>,
+                    <span>funcional</span> e que realmente ajude a loja a se comunicar melhor com seus clientes. <br>
+                    <br>
+
+                    Tenho uma base sólida em <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>, estou em
+                    <span>constante evolução</span> nos estudos e sempre
+                    busco
+                    aplicar boas práticas de <span>organização</span>, <span>responsividade</span> e
+                    <span>usabilidade</span>. Gosto de entender o negócio do
+                    cliente antes de começar, para que o site faça sentido na prática e não seja apenas algo visual.
+                    <br>
+                    <br>
+
+                    Trabalho de forma <span>responsável</span>, <span>organizada</span> e <span>transparente</span>,
+                    explicando cada etapa do processo e
+                    deixando
+                    tudo bem alinhado desde o início. Valorizo muito a <span>comunicação clara</span>, o
+                    <span>cumprimento de prazos</span> e a
+                    entrega de um resultado que o cliente consiga usar com facilidade no dia a dia. <br> <br>
+
+                    Como pessoa, sou <span>comunicativo</span>, <span>dedicado</span> e gosto de <span>resolver
+                        problemas</span>. Tenho facilidade para ouvir,
+                    entender necessidades e transformar ideias em algo concreto. Acredito que confiança se constrói com
+                    <span>honestidade</span>, <span>comprometimento</span> e <span>entrega bem feita</span>, e é
+                    exatamente isso que busco em cada projeto.
+                    <br>
+                    <br>
+
+                    Se você procura alguém <span>acessível</span>, <span>comprometido</span> e <span>focado</span> em
+                    criar um site que realmente funcione para
+                    o
+                    seu negócio, será um prazer conversar e entender o que você precisa.
+                </p>
+
+                <br>
+
+            </div>
+
+            <div class="perfil">
+
+                <img src="img/foto-perfil" class="foto-perfil">
+                
+                <div class="meunome">
+                    
+                    <h3>Erick Roberto Araújo Rocha</h3>
+                
+                </div>
+            
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </section>
+
+    <footer class="roda" id="rodape">
+        
+        
+        <h3 class="cont">Contatos</h3>
+
+        <hr >
+        
+        <div class="links-rodape">
+
+            <div class="logo-rodape1">
+
+                <a href="mailto:erick.rocha.web@gmail.com"><img  src="img/email-logo.png" width="25px"></p>
+            
+            </div>
+            
+            <div class="logo-rodape2">
+
+                <a href="https://www.instagram.com/erczin.dev/" target="_blank"><img  src="img/instagram.png" width="50px"></a>
+            
+            </div>
+            
+        </div>
+        
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
