@@ -23,11 +23,6 @@ function buildWhatsAppMessage(plan, extraListText = "") {
 
 Plano: ${plan}
 ${extraListText ? "Extras: " + extraListText + "\n" : ""}
-
-Meu negócio é:
-Objetivo do site:
-Páginas/Seções desejadas:
-Prazo:
 `;
 
     return encodeURIComponent(msg);
