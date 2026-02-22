@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Rocha | Criação de Sites para Comércios Locais</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/logo-titulo.png">
+    <link rel="icon" href="img/Logo-Erick-Roberto.png">
 
 </head>
 
@@ -15,15 +15,15 @@
 
     <header>
 
-        <img class="logo" src="img/logo-header.png" alt="logo-principal-do-site">
-
+        <img class="logo" src="img/Logo-principal-Erick-Roberto.png" alt="logo-principal-do-site">
+        <p class="legenda-logo">| Criação de sites</p>
         <nav class="links">
-            
+
             <a href="#home">Home</a>
             <p>|</p>
             <a href="#serviços">Serviços</a>
             <p>|</p>
-            <a href="#preço">Preços</a>
+            <a href="#precos">Preços</a>
             <p>|</p>
             <a href="#Sobre">Sobre mim</a>
             <p>|</p>
@@ -32,8 +32,6 @@
         </nav>
 
     </header>
-
-    <div class="masc" onclick="FecharForm()"></div>
 
     <section id="home" class="area-principal">
 
@@ -58,26 +56,138 @@
 
         <div class="imagem-loja">
 
-            <img src="img/exemplo-loja.png" alt="Imagem de exemplo de loja">
+            <p class="portfolio-legenda">
+                Portfólio (projeto real): <strong>TagFlow</strong>
+            </p>
+
+            <iframe id="iframe" class="portfolio-frame" src="https://erick-rocha-web.github.io/Tag-Flow/"
+                title="Portfólio - TagFlow" loading="lazy" referrerpolicy="no-referrer"></iframe>
 
         </div>
 
-        <div class="formulario">
+        <div class="lead-overlay" id="lead-overlay" aria-hidden="true"></div>
 
-            <form class="form" action="https://formcarry.com/s/L7vPJmRgA-F" method="POST" enctype="multipart/form-data">
+        <div class="lead-modal" id="lead-choice" role="dialog" aria-modal="true" aria-labelledby="lead-choice-title"
+            aria-hidden="true">
+            <button class="lead-close" id="lead-choice-close" type="button" aria-label="Fechar">✕</button>
 
-                <input placeholder="Digite seu nome" type="text" name="nome">
-                <input placeholder="Telefone para contato" type="tel" name="telefone">
-                <textarea placeholder="Faça uma breve explicação do projeto" name="Explicação"></textarea>
+            <h3 class="lead-title" id="lead-choice-title">Como você prefere continuar?</h3>
+            <p class="lead-sub" id="lead-choice-sub">
+                Você selecionou: <strong id="lead-choice-plan">—</strong>
+            </p>
 
-                <div class="centro">
+            <div class="lead-actions">
+                <button class="lead-btn lead-btn--wa" id="lead-go-whatsapp" type="button">
+                    Continuar pelo WhatsApp
+                </button>
 
-                    <button class="enviar" type="submit">Enviar Informações</button>
+                <button class="lead-btn lead-btn--form" id="lead-go-form" type="button">
+                    Enviar formulário
+                </button>
+            </div>
 
+            <p class="lead-footnote">
+                Resposta rápida e sem compromisso.
+            </p>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="lead-modal" id="lead-form-modal" role="dialog" aria-modal="true" aria-labelledby="lead-form-title"
+            aria-hidden="true">
+            <button class="lead-close" id="lead-form-close" type="button" aria-label="Fechar">✕</button>
+
+            <h3 class="lead-title" id="lead-form-title">Solicitar proposta</h3>
+            <p class="lead-sub">Preencha abaixo. Eu retorno com uma proposta fechada.</p>
+
+            <form class="lead-form" id="lead-form" action="https://formcarry.com/s/L7vPJmRgA-F" method="POST"
+                enctype="multipart/form-data">
+                <div class="lead-grid">
+                    <label class="lead-field">
+                        <span>Nome</span>
+                        <input name="nome" type="text" placeholder="Seu nome" required>
+                    </label>
+
+                    <label class="lead-field">
+                        <span>WhatsApp</span>
+                        <input name="telefone" type="tel" placeholder="(xx) xxxxx-xxxx" required>
+                    </label>
+
+                    <label class="lead-field">
+                        <span>Pacote</span>
+                        <select name="pacote" id="lead-plan-select" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Essencial">Essencial</option>
+                            <option value="Profissional">Profissional</option>
+                            <option value="Premium">Premium</option>
+                        </select>
+                    </label>
+
+                    <label class="lead-field">
+                        <span>Prazo</span>
+                        <select name="prazo">
+                            <option value="Sem pressa">Sem pressa</option>
+                            <option value="15 dias">15 dias</option>
+                            <option value="30 dias">30 dias</option>
+                            <option value="Urgente">Urgente</option>
+                        </select>
+                    </label>
                 </div>
-            </form>
 
+                <fieldset class="lead-extras">
+                    <legend>Extras (opcional)</legend>
+
+                    <label class="lead-check">
+                        <input type="checkbox" name="extras[]" value="Botão extra (+R$ 30)">
+                        <span>Botão extra (+ R$ 30)</span>
+                    </label>
+
+                    <label class="lead-check">
+                        <input type="checkbox" name="extras[]" value="Parágrafo extra (+R$ 10)">
+                        <span>Parágrafo extra (+ R$ 10)</span>
+                    </label>
+
+                    <label class="lead-check">
+                        <input type="checkbox" name="extras[]" value="Seção nova (+R$ 120)">
+                        <span>Seção nova (+ R$ 120)</span>
+                    </label>
+
+                    <label class="lead-check">
+                        <input type="checkbox" name="extras[]" value="Página nova (+R$ 220)">
+                        <span>Página nova (+ R$ 220)</span>
+                    </label>
+
+                    <label class="lead-check">
+                        <input type="checkbox" name="extras[]" value="Formulário com validação (+R$ 180)">
+                        <span>Formulário com validação (+ R$ 180)</span>
+                    </label>
+
+                    <label class="lead-check">
+                        <input type="checkbox" name="extras[]" value="Responsividade avançada (+R$ 200)">
+                        <span>Responsividade avançada (+ R$ 200)</span>
+                    </label>
+                </fieldset>
+
+                <label class="lead-field">
+                    <span>Explique o que você precisa</span>
+                    <textarea name="Explicação" rows="5"
+                        placeholder="Tipo de negócio, objetivo do site, referências, páginas desejadas..."
+                        required></textarea>
+                </label>
+
+                <div class="lead-submit-row">
+                    <button class="lead-btn lead-btn--form" type="submit">Enviar formulário</button>
+                    <button class="lead-btn lead-btn--ghost" id="lead-send-whatsapp-from-form" type="button">
+                        Enviar no WhatsApp
+                    </button>
+                </div>
+
+                <p class="lead-footnote">
+                    Ao enviar, você concorda em receber contato apenas para retorno do orçamento.
+                </p>
+            </form>
         </div>
+
+
 
     </section>
 
@@ -100,7 +210,7 @@
                     <li>Feito para expandir seu comércio</li>
                     <li>Foco em contato rápido com o cliente</li>
                     <li>Sem mensalidades</li>
-                
+
                 </ul>
 
             </div>
@@ -112,7 +222,7 @@
                     <li>Funciona bem no celular, que é onde o cliente está</li>
                     <li>Ajuda sua loja a passar mais confiança</li>
                     <li>Site simples, sem complicação para você</li>
-                
+
                 </ul>
 
             </div>
@@ -140,25 +250,25 @@
                 <div class="hover-imagem">
 
                     <img class="config-serviços" src="img/serviço-1.png" alt="Site institucional">
-                
+
                 </div>
 
                 <div class="hover-imagem">
 
                     <img class="config-serviços" src="img/serviço-2.png" alt="Site Responsivo">
-                
+
                 </div>
 
                 <div class="hover-imagem">
 
                     <img class="config-serviços" src="img/serviço-3.png" alt="Contato rápido">
-                
+
                 </div>
 
                 <div class="hover-imagem">
 
                     <img class="config-serviços" src="img/serviço-4.png" alt="Entrega rápida">
-                
+
                 </div>
 
             </div>
@@ -171,42 +281,142 @@
 
     <hr class="divisor-secao">
 
-    <section id="preço">
-
-        <br>
-
-        <h2>Preços</h2>
-
-        <br>
-
-        <div class="preços">
-
-            <div class="preço-1">
-
-                <div class="hover-imagem-2">
-
-                    <img src="img/preço-essencial.png" alt="Tabela de preço-essencial">
-                
-                </div>
-
-                <div class="button" onclick="AbrirForm()"><button>Contratar</button></div>
-            
-            </div>
-
-            <div class="preço-2">
-
-                <div class="hover-imagem-3">
-
-                    <img src="img/extras.png" alt="Tabela preços extras">
-                
-                </div>
-
-                <div class="button-2" onclick="AbrirForm()"><button>Negociar</button></div>
-            
-            </div>
-
+    <section id="precos" class="pricing">
+        <div class="pricing-header">
+            <h2>Preços</h2>
+            <p>Pacotes claros + extras para personalizar. Valores podem variar conforme complexidade e prazo.</p>
         </div>
 
+        <div class="pricing-grid">
+            <!-- Essencial -->
+            <article class="plan plan--featured">
+                <div class="plan-top">
+                    <h3>Essencial</h3>
+                    <p class="plan-sub">Solução ideal para presença digital profissional, com estrutura organizada e
+                        design responsivo. Indicado para profissionais que desejam uma presença online.</p>
+                    <div class="plan-price">
+                        <span class="price">R$ 599,99</span>
+                        <span class="price-note">pagamento único</span>
+                    </div>
+                </div>
+
+                <ul class="plan-list">
+                    <p>Inclui:</p>
+                    <li>1 página principal estruturada de forma estratégica</li>
+                    <li>Layout responsivo (mobile, tablet e desktop)</li>
+                    <li>Seções institucionais essenciais (Apresentação, Sobre e Contato)</li>
+                    <li>Botões de ação integrados (WhatsApp, Instagram, GitHub etc.)</li>
+                    <li>Organização semântica adequada</li>
+                </ul>
+
+                <a class="plan-cta" href="#contato">Pedir orçamento</a>
+            </article>
+
+            <!-- Profissional -->
+            <article class="plan">
+                <div class="plan-top">
+                    <h3>Profissional</h3>
+                    <p class="plan-sub">Indicado para negócios que desejam transmitir maior autoridade e organização.
+                    </p>
+                    <div class="plan-price">
+                        <span class="price">R$ 949,99</span>
+                        <span class="price-note">pagamento único</span>
+                    </div>
+                </div>
+
+                <ul class="plan-list">
+                    <p>Inclui tudo do plano Essencial, além de:</p>
+                    <li>Até 3 páginas estruturadas</li>
+                    <li>Seções adicionais (Serviços, Projetos, Produtos</li>
+                    <li>Formulário de contato com validação</li>
+                    <li>Estrutura otimizada para melhor indexação (SEO básico)</li>
+                    <li>Refinamento visual e melhor organização de conteúdo</li>
+                </ul>
+
+                <a class="plan-cta" href="#contato">Quero esse</a>
+            </article>
+
+            <!-- Premium -->
+            <article class="plan">
+                <div class="plan-top">
+                    <h3>Premium</h3>
+                    <p class="plan-sub">Mais completo, com foco em conversão e detalhes finos. Indicado para quem busca
+                        um site mais completo, estruturado e estratégico.</p>
+                    <div class="plan-price">
+                        <span class="price">R$ 1.499,99</span>
+                        <span class="price-note">pagamento único</span>
+                    </div>
+                </div>
+
+                <ul class="plan-list">
+                    <p>Inclui tudo do plano Profissional, além de:</p>
+                    <li>Até 5 páginas personalizadas</li>
+                    <li>Estrutura orientada para conversão</li>
+                    <li>Ajuste avançado de responsividade</li>
+                    <li>Otimização de performance</li>
+                    <li>Microinterações e animações leves</li>
+                    <li>Integrações estratégicas (WhatsApp com mensagem automática, links personalizados etc.)</li>
+                    <li>Base preparada para futuras expansões</li>
+                </ul>
+
+                <a class="plan-cta" href="#contato">Falar comigo</a>
+            </article>
+        </div>
+
+        <div class="extras">
+            <h3>Extras:</h3>
+            <p>Se quiser personalizar além do pacote, você pode adicionar itens abaixo:</p>
+
+            <div class="extras-table-wrap">
+                <table class="extras-table" aria-label="Tabela de preços dos extras">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Valor</th>
+                            <th>Observação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Botão extra</td>
+                            <td>+ R$ 30</td>
+                            <td>CTA adicional (ex: “Ver projetos”, “Falar no WhatsApp”).</td>
+                        </tr>
+                        <tr>
+                            <td>Parágrafo extra</td>
+                            <td>+ R$ 10</td>
+                            <td>Texto adicional em seções existentes.</td>
+                        </tr>
+                        <tr>
+                            <td>Seção nova</td>
+                            <td>+ R$ 120</td>
+                            <td>Ex: “Serviços”, “Depoimentos”, “FAQ”.</td>
+                        </tr>
+                        <tr>
+                            <td>Página nova</td>
+                            <td>+ R$ 220</td>
+                            <td>Nova página no menu (ex: “Serviços”, “Sobre”).</td>
+                        </tr>
+                        <tr>
+                            <td>Formulário com validação</td>
+                            <td>+ R$ 180</td>
+                            <td>Campos + validação + mensagens de erro/sucesso.</td>
+                        </tr>
+                        <tr>
+                            <td>Responsividade avançada</td>
+                            <td>+ R$ 200</td>
+                            <td>Ajuste fino em vários tamanhos de tela.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="extras-cta">
+                <p><strong>Quer um orçamento exato?</strong> Me diga o objetivo do site e mando uma proposta fechada.
+                </p>
+                <a class="plan-cta" href="#contato">Solicitar proposta</a>
+            </div>
+        </div>
     </section>
 
     <hr class="divisor-secao">
@@ -267,13 +477,13 @@
             <div class="perfil">
 
                 <img src="img/foto-perfil" class="foto-perfil">
-                
+
                 <div class="meunome">
-                    
+
                     <h3>Erick Roberto Araújo Rocha</h3>
-                
+
                 </div>
-            
+
             </div>
 
         </div>
@@ -288,35 +498,53 @@
 
     </section>
 
-    <footer class="roda" id="rodape">
-        
-        
-        <h3 class="cont">Contatos</h3>
+    <footer class="main-footer" id="rodape">
 
-        <hr >
-        
-        <div class="links-rodape">
+        <div class="footer-container">
 
-            <div class="logo-rodape1">
+            <div class="footer-info">
+                <h3 class="footer-logo">Erick Rocha</h3>
 
-                <a href="mailto:erick.rocha.web@gmail.com"><img  src="img/email-logo.png" width="25px"></a>
-            
+                <p class="footer-description">
+                    Desenvolvimento de sites profissionais para comércios locais.
+                    Estrutura organizada, responsividade e foco em conversão.
+                </p>
+
+                <p class="footer-author">
+                    Desenvolvido por <span>Erick Roberto Araújo Rocha</span>
+                </p>
             </div>
-            
-            <div class="logo-rodape2">
 
-                <a href="https://www.instagram.com/erczin.dev/" target="_blank"><img  src="img/instagram.png" width="50px"></a>
-            
+            <div class="footer-links">
+
+                <div class="footer-group">
+                    <h4>Navegação</h4>
+                    <a href="#home">Home</a>
+                    <a href="#serviços">Serviços</a>
+                    <a href="#precos">Preços</a>
+                    <a href="#Sobre">Sobre mim</a>
+                </div>
+
+                <div class="footer-group">
+                    <h4>Contato</h4>
+                    <a href="mailto:erick.rocha.web@gmail.com">Email</a>
+                    <a href="https://www.instagram.com/erczin.dev/" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/erick-roberto-ara%C3%BAjo-rocha-063101349/">Linkedin</a>
+                    <a href="https://erick-rocha-web.github.io/Tag-Flow/" target="_blank">Ver TagFlow</a>
+                </div>
+
             </div>
-            
+
         </div>
-        
+
+        <div class="footer-bottom">
+            © 2026 Erick Roberto Araújo Rocha — Todos os direitos reservados.
+        </div>
+
     </footer>
 
 </body>
 
 <script src="script.js"></script>
 
-
 </html>
-
